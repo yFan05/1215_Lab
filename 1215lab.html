@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab</title>
+</head>
+<body>
+    <script>
+        var input1;
+        var input2;
+        input1 = window.prompt("Here is the first input:")
+        input2 = window.prompt("Here is the second input:")
+        if(input1>input2){
+            document.write("firstInput>secondInput");
+            document.body.style.backgroundColor = 'lightblue';
+        } else if(input2>input1){
+            document.write("secondInput>firstInput");
+            document.body.style.backgroundColor = 'orange';
+        } else if(input1==input2){
+            document.write("secondInput==firstInput");
+            document.body.style.backgroundColor = 'lightyellow';
+        }
+    </script>
+    <p>
+    <button onclick="document.write(input1)">1st button</button>
+    <button onclick="document.write(input2)">2nd button</button>
+    </p>
+</body>
+</html>
